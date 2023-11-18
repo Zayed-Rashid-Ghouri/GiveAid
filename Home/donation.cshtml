@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "donation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Donate Now</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">Donate</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Donate Start -->
+<div class="container">
+    <div class="donate" data-parallax="scroll" data-image-src="~/Give-Aid/img/donate.jpg">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="donate-content">
+                    <div class="section-header">
+                        <p>Donate Now</p>
+                        <h2>Let's donate to needy people for better lives</h2>
+                    </div>
+                    <div class="donate-text">
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non. Aliquam metus tortor, auctor id gravida, viverra quis sem. Curabitur non nisl nec nisi maximus. Aenean convallis porttitor. Aliquam interdum at lacus non blandit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="donate-form">
+                    <form  action="~/Home/donation" method="post">
+                        <div class="control-group">
+                            <input type="text" class="form-control"  name="name" placeholder="Name" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <input type="number" class="form-control" name="amount" placeholder="Amount" required="required" />
+                        </div>
+                        <div class="control-group">
+                            <select style="width: 385px; height: 30px; border-radius: 5px; border: 2px solid white; background-color: #FDBE33; color: white;" name="category" class="form-select" aria-label="Default select example" required="required">
+                                <option style="background-color: white; color: black;" selected>---------------  Choose Donation Category  -------------</option>
+                                <option style="background-color: white; color: black;" value="Children">Children</option>
+                                <option style="background-color: white; color: black;" value="Education">Education</option>
+                                <option style="background-color: white; color: black;" value="Disabled">Disabled</option>
+                                <option style="background-color: white; color: black;" value="Elderly">Elderly</option>
+                                <option style="background-color: white; color: black;" value="Employment">Employment</option>
+                                <option style="background-color: white; color: black;" value="Environment">Environment</option>
+                                <option style="background-color: white; color: black;" value="Health">Health</option>
+                                <option style="background-color: white; color: black;" value="Women">Women</option>
+                                <option style="background-color: white; color: black;" value="Youth">Youth</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <select style="width: 385px; height: 30px; border-radius: 5px; border: 2px solid white; background-color: #FDBE33; color: white;" name="bank" class="form-select" aria-label="Default select example" required="required">
+                                <option style="background-color: white; color: black;" selected>---------------  Choose Bank Account -------------</option>
+                                <option style="background-color: white; color: black;" value="HBL">Habib Bank Limited (HBL)</option>
+                                <option style="background-color: white; color: black;" value="NBP">National Bank of Pakistan (NBP)</option>
+                                <option style="background-color: white; color: black;" value="UBL">United Bank Limited (UBL)</option>
+                                <option style="background-color: white; color: black;" value="BAHL">Bank Al-Habib Limited (BAHL)</option>
+                                <option style="background-color: white; color: black;" value="ABL">Allied Bank Limited (ABL)</option>
+                                <option style="background-color: white; color: black;" value="FBL">Faysal Bank Limited (FBL)</option>
+                                <option style="background-color: white; color: black;" value="BAFL">Bank Alfalah Limited (BAFL)</option>
+                                <option style="background-color: white; color: black;" value="DIBP">Dubai Islamic Bank Pakistan Limited (DIB Pakistan)</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" placeholder="IBAN Number" name="iban" required="required" />
+                        </div>
+                        <div>
+                            <button class="btn btn-custom" type="submit">Donate Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Donate End -->

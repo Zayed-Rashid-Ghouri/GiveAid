@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{
+    ViewBag.Title = "volunteer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Volunteer</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">Volunteer</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Volunteer Start -->
+<div class="container">
+    <div class="volunteer" data-parallax="scroll" data-image-src="~/Give-Aid/img/volunteer.jpg">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="volunteer-form">
+                    <form action="~/Home/register" method="post">
+                        <div class="control-group">
+                            <input type="text" class="form-control" name="username" required="required" placeholder="Username" />
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" name="email" required="required" placeholder="Email" />
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" name="companyname" required="required" placeholder="Company Name" />
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" name="number" required="required" placeholder="Number" />
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" name="txt" required="required" placeholder="Bank Details" />
+                        </div>
+                        <div class="control-group">
+                            <input type="file" class="form-control" name="img" required="required" placeholder="Image" />
+                        </div>
+                        <div>
+                            <button class="btn btn-custom" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="volunteer-content">
+                    <div class="section-header">
+                        <p>Become A Volunteer</p>
+                        <h2>Let’s make a difference in the lives of others</h2>
+                    </div>
+                    <div class="volunteer-text">
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non. Aliquam metus tortor, auctor id gravida, viverra quis sem. Curabitur non nisl nec nisi maximus. Aenean convallis porttitor. Aliquam interdum at lacus non blandit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Volunteer End -->

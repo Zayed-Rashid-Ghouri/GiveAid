@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Give_Aid.contact>
+
+@{
+    ViewBag.Title = "contact";
+    Layout = "~/Views/Shared/layout_backend.cshtml";
+}
+
+<h2>contact</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.messag)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.messag)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "edit_contact", new { id=item.id }) |
+
+            @Html.ActionLink("Delete", "Delete_contact", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

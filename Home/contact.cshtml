@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Contact Start -->
+<div class="contact">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Get In Touch</p>
+            <h2>Contact for any query</h2>
+        </div>
+        <div class="contact-img">
+            <img src="~/Give-Aid/img/contact.jpg" alt="Image">
+        </div>
+        <div class="contact-form">
+            <div id="success"></div>
+
+
+            <form action="~/Home/contact" method="post" >
+                <div class="control-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required="required" data-validation-required-message="Please enter your name" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <input type="text" class="form-control" name="number" id="subject" placeholder="Your Phone Number" required="required" data-validation-required-message="Please enter a Phone Number" />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                    <textarea class="form-control" name="messag"  id="message"placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                    <p class="help-block text-danger"></p>
+                </div>
+                <div>
+                    <button class="btn btn-custom" type="submit" >Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->

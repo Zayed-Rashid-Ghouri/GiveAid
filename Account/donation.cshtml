@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Give_Aid.donation>
+
+@{
+    ViewBag.Title = "donation";
+    Layout = "~/Views/Shared/layout_backend.cshtml";
+}
+
+<h2>donation</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bank)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.iban)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bank)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iban)
+        </td>
+        <td>
+            @Html.ActionLink("Delete", "Delete_donation", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

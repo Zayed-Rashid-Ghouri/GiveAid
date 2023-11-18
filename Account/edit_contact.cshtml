@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "edit_contact";
+    Layout = "~/Views/Shared/layout_backend.cshtml";
+}
+
+<h2>Edit Contact</h2>
+
+<form action="~/Account/edit_contact" method="post">
+    <input type="number" value="@Model.id" name="id" />
+    <input type="text" value="@Model.name" name="name" />
+    <input type="text" value="@Model.email" name="email" />
+    <input type="text" value="@Model.number" name="number" />
+    <input type="text" value="@Model.messag" name="messag" />
+    <input type="submit" value="Save Changes" />
+</form>
+

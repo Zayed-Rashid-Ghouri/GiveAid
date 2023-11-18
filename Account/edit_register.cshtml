@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "edit_register";
+    Layout = "~/Views/Shared/layout_backend.cshtml";
+}
+
+<h2>Edit Register</h2>
+
+<form action="~/Account/edit_register" method="post">
+    <input type="number" value="@Model.id" name="id" />
+    <input type="text" value="@Model.username" name="username" />
+    <input type="text" value="@Model.email" name="email" />
+    <input type="text" value="@Model.companyname" name="companyname" />
+    <input type="text" value="@Model.number" name="number" />
+    <input type="text" value="@Model.txt" name="txt" />
+    <input type="file" value="@Model.img" name="img" />
+    <input type="submit" value="Save Changes" />
+</form>

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "edit_partner";
+    Layout = "~/Views/Shared/layout_backend.cshtml";
+}
+
+<h2>Edit Partner</h2>
+
+<form action="~/Account/edit_partner" method="post">
+    <input type="number" value="@Model.id" name="id" />
+    <input type="text" value="@Model.name" name="name" />
+    <input type="file" value="@Model.img" name="img" />
+
+    <input type="submit" value="Save Changes" />
+</form>
+
+
